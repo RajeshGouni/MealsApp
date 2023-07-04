@@ -1,0 +1,249 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E5FDFF;
+    
+}
+
+header{
+    margin-top: 1rem;
+}
+h2{
+    margin-left: 1rem; 
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:-1.8rem;
+}
+form .search-input{
+    font-size: 1.4rem;
+    padding:0.6rem;
+    border-radius: 0.3rem;
+    width: 40%;
+    text-align: center;
+
+}
+
+  .favourite-btn{
+    font-size: 1rem;
+    padding:0.2rem;
+    border-radius: 0.3rem;
+    margin-top: 2rem;
+    margin-left:1rem;
+    cursor: pointer;
+}
+.favourite-btn:hover{
+    background-color: hsl(0, 0%, 57%);
+}
+
+.search-list{
+    margin-left :5.5rem;
+    display: flex;
+    flex-direction: row;
+     padding: 9rem; 
+    flex-wrap: wrap;
+   
+}
+.search-result {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width:18rem;
+    height: auto;
+    box-shadow: 10px 10px 10px 0px #888888;
+    border:2px solid black;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    margin: 2rem; 
+}
+
+.fa-solid{
+    pointer-events: none;
+}
+
+ .favourite{
+    margin: 1rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #981919;
+
+} 
+.favourite:hover{
+    color: #2e8618;
+}
+.clicked{
+    color:green;
+}
+img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    pointer-events: none;
+    
+}
+.search-result:hover{
+    box-shadow: 10px 10px 10px 5px  #535252;
+    transition: 0.2s ease-in;
+    transition: 0.2s ease-out;
+}
+
+.title{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+
+.recipe-btn{
+    border: none;
+    text-decoration: none;
+    
+    color: #8f0c0c;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    width: 175px;
+    margin-top: -0.3rem;
+    padding:1rem;
+    border-radius: 2rem;
+    transition: all 0.4s linear;
+   
+}
+.recipe-btn:hover{
+    
+    color: #2e8618;
+}
+.details:hover{
+    color: rgb(192, 11, 11);
+}
+ 
+/* meal details */
+.meal-details{
+    
+    top: 50%;
+    left: 50%;
+    color: black; 
+    width: 90%;
+    height: 90%;
+    padding: 2rem 0;
+    display: none;
+    
+} 
+.meal-details::-webkit-scrollbar{
+    width: 10px;
+}
+.meal-details::-webkit-scrollbar-thumb{
+    background: #2e8618;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+} 
+
+
+/* js related */
+ .showRecipe{
+    display: block;
+ }
+
+.meal-details-content{
+    margin: 2rem;
+}
+.meal-details-content p:not(.recipe-category){
+    padding: 1rem 0;
+}
+ #recipe-close-btn{
+    position: absolute;
+    right: 2rem;
+    top: 10rem;
+    font-size: 1.8rem;
+    background: #981919;
+  
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+} 
+.recipe-title{
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .recipe-category{
+    
+    font-weight: 600;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+
+.recipe-description{
+    display:flex;
+    flex-direction: row-reverse;
+}
+.recipe-instruct{
+    padding: 1rem 0;
+}
+.recipe-meal-img img{
+    width: 350px;
+    height: 350px;
+    border-radius: 0.2rem;
+    margin:3rem;
+     
+}
+ .recipe-link{
+    margin: 1.4rem 0;
+}
+.recipe-link a{
+    color: #7b2828;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+.recipe-link a:hover{
+    opacity: 0.8;
+}    
+
+.hide-list{
+    display:none;
+}
+
+
+
+
